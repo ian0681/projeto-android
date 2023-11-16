@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cora0:#C5EBC9;
+    --cora1:#1ADC77;
+    --cora2:#36A86D;
+    --cora3:#3D7558;
+    --cora4:#1D5235;
+    --cora5:#08331B;
+    --corb1:#62d399;
+    --corb2:#00612b;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 15px 0px;
+}
+
+body {
+    background-color: #C5EBC9;
+}
+
+a.externo:after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cora2), var(--cora5));
+    min-height: 100px;
+    text-align: center;
+    padding-top: 10px;
+    padding: 7px;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    margin-top: 20px;
+    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.542);
+    font-size: 2.5em;
+}
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.542);
+}
+
+nav {
+    background-color: var(--cora5);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.674);
+    padding-bottom: 15px;
+}
+
+nav > a {
+    color: whitesmoke;
+    font-size: 1.4em;
+    font-weight: bolder;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition-duration: 0.39s;
+}
+
+nav > a:hover {
+    background-image: linear-gradient(to bottom, var(--cora1), #0e7540);
+    color: var(--cora4);
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.368);
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+}
+
+main h1 {
+    font-family: 'Android';
+    color: var(--cor5);
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: 'Android';
+    color: var(--cora5);
+    background-image: linear-gradient(to right, var(--cora1), transparent);
+    font-weight: normal;
+}
+
+main p {
+    text-indent: 30px;
+    line-height: 1.8em;
+}
+
+main strong {
+    color: var(--cora5);
+    font-weight: bolder;
+}
+
+main a {
+    background-color: var(--cora1);
+    color: var(--cora5);
+    padding: 3px 7px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main a:hover {
+    background-color: var(--corb1);
+    color: var(--corb2);
+    text-decoration: underline;
+}
+
+main a:active {
+    color: #FF7667;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequeno {
+    min-width: none ;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cora5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px 20px 56.72% 20px;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--corb1);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+aside > h3 {
+    background-color: var(--cora4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside a {
+    background-color: var(--cora5);
+    color: var(--corb1);
+}
+
+aside a:hover {
+    background-color: var(--cora4);
+    color: var(--cora0);
+}
+
+footer {
+    background-color: var(--cora5);
+    color: white;
+    padding: 5px;
+    font-size: x-large;
+    min-width: 200px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 100px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: var(--corb1);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cora1);
+    text-decoration: underline;
+}
